@@ -225,3 +225,31 @@ a:hover{ text-decoration:underline; }
   .grid{ grid-template-columns:1fr; }
   .gallery img{ height:160px; }
 }
+
+/* ===== contact form ===== */
+.contact-form{ margin-top: 10px; }
+
+.form-row{ margin-top: 12px; }
+
+.form-label{
+  display:block;
+  font-weight:700;
+  margin-bottom: 6px;
+}
+
+.form-input, .form-textarea{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  font: inherit;
+  background:#fff;
+}
+
+.form-input:focus, .form-textarea:focus{
+  outline: 2px solid rgba(10,102,194,.25);
+  border-color: rgba(10,102,194,.45);
+}
+
+/* honeypot */
+.hp{ display:none; }
