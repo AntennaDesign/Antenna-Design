@@ -1,3 +1,13 @@
+/* ロゴバナー：切らずに全体を表示 */
+.logo-banner{
+  width: 100%;
+  height: auto;          /* 画像比率を維持 */
+  display: block;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+
+
 :root{
   --text:#111;
   --muted:#666;
