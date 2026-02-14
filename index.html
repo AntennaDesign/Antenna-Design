@@ -1,177 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>アンテナデザイン合同会社</title>
-  <meta name="description" content="アンテナデザイン合同会社は、TVアンテナの設置や、テレビの電波や配線のトラブルの解決を行う鹿児島の会社です。お見積もりは無料です。お気軽にご相談ください。">
-  <style>
-    body {
-      background: #fff;
-      color: #111;
-      margin: 0;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    .banner-img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      display: block;
-      margin: 0 0 20px 0;
-    }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 32px;
-    }
-    .site-title {
-      font-size: 1rem;
-      letter-spacing: 2px;
-      font-weight: bold;
-    }
-    .menu {
-      display: flex;
-      gap: 16px;
-    }
-    .menu a {
-      text-decoration: none;
-      color: #111;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      transition: color 0.2s;
-    }
-    .menu a:hover {
-      color: #007aff;
-    }
-    .main-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 30vh;
-    }
-    .main-title h1 {
-      font-size: 2.8rem;
-      font-weight: bold;
-      letter-spacing: 3px;
-      margin: 0;
-    }
-    .center-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 10px;
-    }
-    .red {
-      color: red;
-      text-decoration: underline;
-    }
-    table {
-      border-collapse: collapse;
-      margin: 12px 0;
-    }
-    table, th, td {
-      border: 1px solid #111;
-      padding: 8px 16px;
-    }
-    @media (max-width: 600px) {
-      .header {
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px;
-      }
-      .main-title h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アンテナデザイン合同会社｜鹿児島（薩摩半島）のテレビアンテナ工事</title>
+  <meta name="description" content="アンテナデザイン合同会社は、鹿児島（薩摩半島）でテレビアンテナの設置・調整、受信トラブル（映らない・映りが悪い等）に対応します。施工保証3年。まずはお電話でご相談ください。">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="site-title">
-      <a href="https://antennadesign.github.io/Antenna-Design/">ANTENNA DESIGN</a>
+    <div class="container header-inner">
+      <div class="site-title"><a href="./index.html">ANTENNA DESIGN</a></div>
+      <nav class="menu">
+        <a href="./about.html">ABOUT</a>
+        <a href="./works.html">WORKS</a>
+        <a href="./contact.html">CONTACT</a>
+      </nav>
     </div>
-    <nav class="menu">
-      <a href="about.html">ABOUT</a>
-      <a href="works.html">WORKS</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
   </header>
-  <main class="main-title">
-    <h1>アンテナデザイン合同会社</h1>
+
+  <main class="container">
+    <section class="hero">
+      <h1>アンテナデザイン合同会社</h1>
+      <p>鹿児島（薩摩半島）｜テレビアンテナの設置・調整／受信トラブル対応</p>
+
+      <div class="badges">
+        <div class="badge">施工保証：3年</div>
+        <div class="badge">対応エリア：鹿児島県内（薩摩半島）</div>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary" href="tel:0992968673">電話する（099-296-8673）</a>
+        <a class="btn" href="./contact.html">お問い合わせフォーム</a>
+      </div>
+      <div class="note">
+        ※ 作業前に内容をご説明し、ご了承後に施工します。
+      </div>
+    </section>
+
+    <img class="banner-img" src="./ANTENNA%20DESIGN.png" alt="アンテナデザイン合同会社 ロゴ">
+
+    <section class="section">
+      <h2>事業内容</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>アンテナ工事</h3>
+          <ul class="list">
+            <li>地デジ（UHF）アンテナ：新規設置・交換</li>
+            <li>BS/CSアンテナ：設置・方向調整</li>
+          </ul>
+          <div class="small">※ 設置環境・電波状況により工事内容が変わります。</div>
+        </div>
+
+        <div class="card">
+          <h3>受信トラブル対応</h3>
+          <ul class="list">
+            <li>映らない／映りが悪い</li>
+            <li>配線・分配・ブースターの点検</li>
+            <li>台風・強風後の点検、方向調整</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>施工保証（3年）</h2>
+      <div class="card">
+        <p style="margin:0">
+          当社が施工した箇所に起因する不具合について、施工日から3年間、状況確認のうえ対応いたします。<br>
+          <span class="small">※ 対象外例：台風・落雷などの自然災害／第三者による改造・移設／機器（TV等）側の故障 など</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>会社概要</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>基本情報</h3>
+          <ul class="list">
+            <li>会社名：アンテナデザイン合同会社</li>
+            <li>代表：松村 彰</li>
+            <li>TEL：<a href="tel:0992968673">099-296-8673</a></li>
+            <li>所在地：〒891-0111 鹿児島県鹿児島市小原町41-18</li>
+            <li>対応エリア：鹿児島県内（薩摩半島）</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>外部リンク</h3>
+          <ul class="list">
+            <li>
+              Instagram：
+              <a href="https://www.instagram.com/matumuraakiraa/?hl=ja" target="_blank" rel="noopener">施工事例</a>
+            </li>
+            <li>
+              ブログ：
+              <a href="https://ameblo.jp/tomomiponchan/" target="_blank" rel="noopener">Ameba</a>
+            </li>
+          </ul>
+          <div class="small">※ 個人アカウントに紐づく場合は「施工事例の掲載場所」として割り切るのが安全です。</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>お問い合わせ</h2>
+      <div class="card">
+        <p style="margin:0 0 10px">
+          まずは状況をお伺いします。お急ぎの場合はお電話が確実です。
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="tel:0992968673">電話する</a>
+          <a class="btn" href="./contact.html">フォームへ</a>
+        </div>
+        <div class="note">
+          <a href="./privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © ANTENNA DESIGN LLC
+    </footer>
   </main>
-  <img src="ANTENNA DESIGN.png" alt="アンテナデザイン合同会社ロゴ" class="banner-img">
-
-  <div class="center-content">
-    <h3>
-      <a href="https://antennadesign.github.io/Antenna-Design/">
-        このサイトのURL  https://antennadesign.github.io/Antenna-Design/
-      </a>
-    </h3>
-
-    <h3>事業内容</h3>
-    <div style="background-color: #f0f0f0; text-align: center; padding: 8px 0;">
-      <span style="display:inline-block; border-bottom: 4px solid #ffd500; padding-bottom: 2px; margin-bottom: 8px;">
-        3年間工事保障
-      </span><br>
-      <span style="display:inline-block; border-bottom: 4px solid #ffd500; padding-bottom: 2px; margin-bottom: 8px;">
-        土日祝日も営業
-      </span><br>
-      <span style="display:inline-block; border-bottom: 4px solid #ffd500; padding-bottom: 2px; margin-bottom: 8px;">
-        市内全域及び近郊OK！
-      </span><br>
-      お気軽にご相談ください<br>
-      フリーダイヤル：0120-858-586<br>
-    </div>
-    <ol>
-      <img src="matthijs-van-heerikhuize-4bp3dFtFSeg-unsplash.jpg" width="1080" height="800" alt="アンテナ">
-      <li>会社概要
-        <ul>
-          <center><li>会社名：アンテナデザイン合同会社</li>
-          <li>代表取締役 : 松村 彰</li>
-          <li>TEL：<span class="red">099-296-8673</span></li>
-          <li>所在地：〒891-0111 鹿児島県 鹿児島市 小原町 41－18</li></center>
-          <li>設立：____</li>
-        </ul>
-      </li>
-      <li>お客様の声
-        <ul>
-          <li>手厚い保証で安心しました</li>
-          <li>人柄がよかったです</li>
-        </ul>
-      </li>
-    </ol>
-
-    <h3>営業時間（仮）</h3>
-    <table>
-      <tr>
-        <th></th>
-        <th>月～金</th>
-        <th>土日</th>
-      </tr>
-      <tr>
-        <th>午前</th>
-        <td>6:00~12:00</td>
-        <td>6:00~12:00</td>
-      </tr>
-      <tr>
-        <th>午後</th>
-        <td>12:00～23:00</td>
-        <td>12:00~23:00</td>
-      </tr>
-    </table>
-
-    <p>
-     <h3>インスタ、やってます。</h3>
-     <ul style="list-style: none; padding: 0;">
-       <li>
-         <img src="md_5b37de49cbb70.jpg" width="25" height="25" alt="インスタグラム">
-         <a href="https://www.instagram.com/matumuraakiraa/?hl=ja">個人インスタグラム</a><br>
-         アメーバブログ:
-         <a href="https://ameblo.jp/tomomiponchan/">https://ameblo.jp/tomomiponchan/</a>
-       </li>
-     </ul>
-   </p>
-  </div>
 </body>
 </html>
