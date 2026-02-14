@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CONTACT｜アンテナデザイン合同会社</title>
-  <meta name="description" content="アンテナ工事・調整・受信トラブルのご相談はこちら。鹿児島（薩摩半島）。">
+  <meta name="description" content="アンテナ工事・調整・受信トラブルのご相談はこちら。鹿児島（薩摩半島）。お急ぎの場合はお電話ください。">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -23,55 +23,88 @@
     <section class="section" style="border-top:none">
       <h2>CONTACT</h2>
 
-      <div class="card">
-        <h3>お電話</h3>
-        <p style="margin:0">
-          <a class="btn primary" href="tel:0992968673">099-296-8673 に電話する</a>
-        </p>
-        <p class="small" style="margin-top:10px">
-          ※ 受付時間や見積ルールが未確定なら、サイトに「仮」として載せず、運用で統一してください。
-        </p>
-      </div>
-
-      <div class="card" style="margin-top:14px">
-        <h3>フォーム</h3>
-        <p class="small">※ 下の action をフォームサービスのURLに置き換えてください（Formspree等）。</p>
-
-        <form action="https://formspree.io/f/XXXXYYYY" method="POST">
-          <p>
-            <label>お名前<br>
-              <input name="name" required style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;">
-            </label>
-          </p>
-          <p>
-            <label>電話番号<br>
-              <input name="tel" required style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;">
-            </label>
-          </p>
-          <p>
-            <label>市町村（任意）<br>
-              <input name="area" style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;">
-            </label>
-          </p>
-          <p>
-            <label>ご相談内容<br>
-              <textarea name="message" required rows="6" style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;"></textarea>
-            </label>
+      <div class="grid">
+        <!-- 電話（主） -->
+        <div class="card">
+          <h3>お急ぎの方はお電話ください</h3>
+          <p class="small" style="margin-top:6px">
+            施工中で出られない場合があります。折り返しのため、留守電に「お名前・市町村・症状」を残してください。
           </p>
 
-          <!-- 迷惑対策（人間は触らない） -->
-          <input type="text" name="_gotcha" style="display:none">
+          <div class="cta">
+            <a class="btn primary" href="tel:0992968673">電話する（099-296-8673）</a>
+          </div>
 
-          <button class="btn primary" type="submit">送信する</button>
-        </form>
+          <p class="note">
+            フォームは「営業時間外」や「通話が難しい場合」にご利用ください。内容確認後、原則お電話で折り返します。
+          </p>
+        </div>
 
-        <p class="note"><a href="./privacy.html">プライバシーポリシー</a></p>
-      </div>
+        <!-- フォーム（補助） -->
+        <div class="card">
+          <h3>お問い合わせフォーム</h3>
+          <p class="small" style="margin-top:6px">
+            ※ 送信先（フォームサービスURL）は後で設定します。<br>
+            現在は action の URL を差し替えるだけで使えます。
+          </p>
 
-      <div class="card" style="margin-top:14px">
-        <h3>アイコン</h3>
-        <p class="small">（必要なら）SNSリンクの横に表示する用</p>
-        <img src="./assets/img/icon-instagram.jpg" alt="Instagramアイコン" style="width:32px; height:32px; border-radius:6px; border:1px solid var(--line);">
+          <form
+            action="https://formspree.io/f/REPLACE_ME"
+            method="POST"
+            class="contact-form"
+          >
+            <!-- 送信後の遷移先（thanks.html を作るなら） -->
+            <input type="hidden" name="_next" value="./thanks.html">
+            <!-- メール件名（フォームサービス側で反映される場合あり） -->
+            <input type="hidden" name="_subject" value="【アンテナデザイン】お問い合わせ">
+            <!-- 迷惑対策：人間は触らない -->
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <label class="form-label">お名前 <span class="small">（必須）</span></label>
+              <input class="form-input" type="text" name="name" required>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">電話番号 <span class="small">（必須）</span></label>
+              <input class="form-input" type="tel" name="tel" required placeholder="例：09012345678">
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">市町村 <span class="small">（任意）</span></label>
+              <input class="form-input" type="text" name="city" placeholder="例：鹿児島市">
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">ご用件 <span class="small">（目安）</span></label>
+              <select class="form-input" name="category">
+                <option value="受信不良">映らない／映りが悪い</option>
+                <option value="新規設置">新規設置</option>
+                <option value="方向調整">方向調整</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">状況の詳細 <span class="small">（必須）</span></label>
+              <textarea class="form-textarea" name="message" rows="6" required placeholder="例：昨日からE202が出て映りません。ブースターあり。"></textarea>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label">希望連絡時間帯 <span class="small">（任意）</span></label>
+              <input class="form-input" type="text" name="call_time" placeholder="例：18時以降／いつでも可">
+            </div>
+
+            <div class="cta" style="margin-top:12px">
+              <button class="btn primary" type="submit">送信する</button>
+              <a class="btn" href="./privacy.html">プライバシーポリシー</a>
+            </div>
+
+            <p class="note">
+              ※ 送信できない場合は、お手数ですがお電話ください。
+            </p>
+          </form>
+        </div>
       </div>
     </section>
 
