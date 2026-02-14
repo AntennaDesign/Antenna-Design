@@ -198,14 +198,21 @@ a:hover{ text-decoration:underline; }
   border:1px solid var(--line);
 }
 
-/* ロゴバナー：切らずに全体を表示 */
-.logo-banner{
-  width:100%;
-  height:auto;
-  display:block;
-  border-radius:16px;
-  border:1px solid var(--line);
+/* ロゴ：横長なので「最大幅を制限して中央寄せ」 */
+.logo-wrap{
+  display: flex;
+  justify-content: center;
+  margin: 18px 0;
 }
+
+.logo-banner{
+  width: min(100%, 760px); /* ←ここでロゴの最大幅を制限（好みで 600〜900） */
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+
 
 .footer{
   border-top:1px solid var(--line);
