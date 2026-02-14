@@ -29,27 +29,49 @@
           <a class="btn primary" href="tel:0992968673">099-296-8673 に電話する</a>
         </p>
         <p class="small" style="margin-top:10px">
-          ※ 受付時間が未確定なら、サイトには載せず運用で統一してください（“仮”表示はNG）。
+          ※ 受付時間や見積ルールが未確定なら、サイトに「仮」として載せず、運用で統一してください。
         </p>
       </div>
 
       <div class="card" style="margin-top:14px">
         <h3>フォーム</h3>
-        <p class="small">※ 下の action をフォームサービスのURLに置き換えてください。</p>
+        <p class="small">※ 下の action をフォームサービスのURLに置き換えてください（Formspree等）。</p>
 
         <form action="https://formspree.io/f/XXXXYYYY" method="POST">
-          <p><label>お名前<br><input name="name" required style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;"></label></p>
-          <p><label>電話番号<br><input name="tel" required style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;"></label></p>
-          <p><label>市町村（任意）<br><input name="area" style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;"></label></p>
-          <p><label>ご相談内容<br><textarea name="message" required rows="6" style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;"></textarea></label></p>
+          <p>
+            <label>お名前<br>
+              <input name="name" required style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;">
+            </label>
+          </p>
+          <p>
+            <label>電話番号<br>
+              <input name="tel" required style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;">
+            </label>
+          </p>
+          <p>
+            <label>市町村（任意）<br>
+              <input name="area" style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;">
+            </label>
+          </p>
+          <p>
+            <label>ご相談内容<br>
+              <textarea name="message" required rows="6" style="width:100%; padding:10px; border:1px solid var(--line); border-radius:10px;"></textarea>
+            </label>
+          </p>
 
-          <!-- 迷惑対策 -->
+          <!-- 迷惑対策（人間は触らない） -->
           <input type="text" name="_gotcha" style="display:none">
 
           <button class="btn primary" type="submit">送信する</button>
         </form>
 
         <p class="note"><a href="./privacy.html">プライバシーポリシー</a></p>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>アイコン</h3>
+        <p class="small">（必要なら）SNSリンクの横に表示する用</p>
+        <img src="./assets/img/icon-instagram.jpg" alt="Instagramアイコン" style="width:32px; height:32px; border-radius:6px; border:1px solid var(--line);">
       </div>
     </section>
 
