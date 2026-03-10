@@ -3,16 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a66c2">
+  <link rel="icon" href="./assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>ABOUT｜アンテナデザイン合同会社</title>
   <meta name="description" content="アンテナデザイン合同会社の会社情報。鹿児島（薩摩半島）でテレビアンテナ工事・調整を行っています。">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="アンテナデザイン合同会社">
+  <meta property="og:title" content="ABOUT｜アンテナデザイン合同会社">
+  <meta property="og:description" content="会社情報、施工保証、対応内容、代表情報を掲載しています。">
+  <meta property="og:image" content="./assets/img/logo-banner.png">
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <div class="site-title"><a href="./index.html">ANTENNA DESIGN</a></div>
-      <nav class="menu">
-        <a href="./about.html">ABOUT</a>
+      <nav class="menu" aria-label="グローバルナビゲーション">
+        <a href="./about.html" aria-current="page">ABOUT</a>
         <a href="./works.html">WORKS</a>
         <a href="./contact.html">CONTACT</a>
       </nav>
@@ -21,7 +29,9 @@
 
   <main class="container">
     <section class="section" style="border-top:none">
-      <h2>ABOUT</h2>
+      <h1>ABOUT</h1>
+      <p class="page-lead">会社情報と、対応内容・施工時の考え方をまとめています。</p>
+
       <div class="grid">
         <div class="card">
           <h3>当社について</h3>
@@ -41,15 +51,38 @@
     </section>
 
     <section class="section">
+      <h2>対応内容</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>主なご相談内容</h3>
+          <ul class="list compact">
+            <li>地デジアンテナの新規設置・交換</li>
+            <li>BS/CSアンテナの新規設置・方向調整</li>
+            <li>映らない・映りが悪い等の受信不良の点検</li>
+            <li>台風・強風後の確認や再調整</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>対応時の考え方</h3>
+          <ul class="list compact">
+            <li>現地状況を確認してから必要な施工内容をご説明します。</li>
+            <li>状況を共有したうえで、ご了承後に施工します。</li>
+            <li>見た目と受信状態の両方に配慮して設置します。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <h2>代表</h2>
       <div class="grid">
         <div class="card">
           <h3>松村 彰</h3>
-          <p style="margin:0">現場対応・施工・調整を担当します。</p>
+          <p style="margin:0">現場対応・施工・調整を担当します。お問い合わせ内容を確認し、必要に応じて現地状況を見ながら対応します。</p>
         </div>
         <div class="card">
           <h3>写真</h3>
-          <img src="./assets/img/owner.jpg" alt="代表（施工者）" style="width:100%; height:auto; border-radius:14px; border:1px solid var(--line);">
+          <img src="./assets/img/owner.jpg" alt="代表（施工者）" width="1200" height="1600" loading="lazy" decoding="async" style="width:100%; height:auto; border-radius:14px; border:1px solid var(--line);">
         </div>
       </div>
     </section>
@@ -67,9 +100,17 @@
     </section>
 
     <footer class="footer">
-      <a href="./index.html">← ホームへ戻る</a>
+      <div class="footer-meta">
+        <div>アンテナデザイン合同会社</div>
+        <div>〒891-0111 鹿児島県鹿児島市小原町41-18</div>
+        <div>TEL：<a href="tel:0992968673">099-296-8673</a> ／ 対応エリア：鹿児島県内（薩摩半島）</div>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">ホームへ戻る</a>
+        <a href="./works.html">施工事例</a>
+        <a href="./contact.html">お問い合わせ</a>
+      </div>
     </footer>
   </main>
 </body>
 </html>
-
