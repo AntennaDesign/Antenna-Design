@@ -3,28 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CONTACT｜アンテナデザイン合同会社</title>
-  <meta name="description" content="アンテナ工事・調整・受信トラブルのご相談はこちら。鹿児島（薩摩半島）。お急ぎの場合はお電話ください。営業時間外・通話が難しい場合はフォームをご利用ください。">
+  <meta name="theme-color" content="#0a66c2">
+  <link rel="icon" href="./assets/img/logo.png" type="image/png">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <title>CONTACT｜アンテナデザイン合同会社</title>
+  <meta name="description" content="アンテナ工事・調整・受信トラブルのご相談はこちら。鹿児島（薩摩半島）。お急ぎの場合はお電話ください。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="アンテナデザイン合同会社">
+  <meta property="og:title" content="CONTACT｜アンテナデザイン合同会社">
+  <meta property="og:description" content="お急ぎのご相談はお電話へ。営業時間外や通話が難しい場合はフォームをご利用ください。">
+  <meta property="og:image" content="./assets/img/logo-banner.png">
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <div class="site-title"><a href="./index.html">ANTENNA DESIGN</a></div>
-      <nav class="menu">
+      <nav class="menu" aria-label="グローバルナビゲーション">
         <a href="./about.html">ABOUT</a>
         <a href="./works.html">WORKS</a>
-        <a href="./contact.html">CONTACT</a>
+        <a href="./contact.html" aria-current="page">CONTACT</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="section" style="border-top:none">
-      <h2>CONTACT</h2>
+      <h1>CONTACT</h1>
+      <p class="page-lead">お急ぎの場合はお電話、営業時間外や通話が難しい場合はフォームをご利用ください。</p>
 
       <div class="grid">
-        <!-- 電話（主） -->
         <div class="card">
           <h3>お急ぎの方はお電話ください</h3>
           <p class="small" style="margin-top:6px">
@@ -35,18 +43,24 @@
             <a class="btn primary" href="tel:0992968673">電話する（099-296-8673）</a>
           </div>
 
+          <div class="info-points">
+            <div class="point">
+              <strong>ご相談時にあるとスムーズな情報</strong>
+              お名前／市町村／建物種別／現在の症状／折り返し先電話番号
+            </div>
+            <div class="point">
+              <strong>よくあるご相談</strong>
+              映らない、映りが悪い、台風後に状態が変わった、BS/CS の受信調整をしたい など
+            </div>
+          </div>
+
           <p class="note">
             フォームは「営業時間外」や「通話が難しい場合」にご利用ください。内容確認後、原則お電話で折り返します。
           </p>
-
-          <p class="small" style="margin-top:10px; margin-bottom:0">
-            ※ 折り返しが必要なため、フォームには電話番号の入力をお願いします。
-          </p>
         </div>
 
-        <!-- Googleフォーム（補助） -->
         <div class="card">
-          <h3>お問い合わせフォーム（営業時間外はこちら）</h3>
+          <h3>お問い合わせフォーム</h3>
           <p class="small" style="margin-top:6px">
             Googleフォームが別タブで開きます。送信後、内容確認のうえ、原則お電話で折り返します。
           </p>
@@ -60,9 +74,8 @@
             </a>
           </div>
 
-          <p class="note">
-            送信できない場合は、お手数ですがお電話ください。
-          </p>
+          <p class="note">送信できない場合は、お手数ですがお電話ください。</p>
+          <p class="small" style="margin-bottom:0">※ 折り返しが必要なため、フォームには電話番号の入力をお願いします。</p>
 
           <div class="note">
             <a href="./privacy.html">プライバシーポリシー</a>
@@ -72,7 +85,16 @@
     </section>
 
     <footer class="footer">
-      <a href="./index.html">← ホームへ戻る</a>
+      <div class="footer-meta">
+        <div>アンテナデザイン合同会社</div>
+        <div>〒891-0111 鹿児島県鹿児島市小原町41-18</div>
+        <div>TEL：<a href="tel:0992968673">099-296-8673</a> ／ 対応エリア：鹿児島県内（薩摩半島）</div>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">ホームへ戻る</a>
+        <a href="./about.html">会社情報</a>
+        <a href="./works.html">施工事例</a>
+      </div>
     </footer>
   </main>
 </body>
