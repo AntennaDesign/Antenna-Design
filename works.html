@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a66c2">
+  <link rel="icon" href="./assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>WORKS｜アンテナデザイン合同会社</title>
   <meta name="description" content="アンテナデザイン合同会社の施工事例。鹿児島（薩摩半島）のテレビアンテナ工事・調整。">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="アンテナデザイン合同会社">
+  <meta property="og:title" content="WORKS｜アンテナデザイン合同会社">
+  <meta property="og:description" content="施工写真と施工内容の例を掲載しています。">
+  <meta property="og:image" content="./assets/img/logo-banner.png">
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <div class="site-title"><a href="./index.html">ANTENNA DESIGN</a></div>
-      <nav class="menu">
+      <nav class="menu" aria-label="グローバルナビゲーション">
         <a href="./about.html">ABOUT</a>
-        <a href="./works.html">WORKS</a>
+        <a href="./works.html" aria-current="page">WORKS</a>
         <a href="./contact.html">CONTACT</a>
       </nav>
     </div>
@@ -21,30 +29,85 @@
 
   <main class="container">
     <section class="section" style="border-top:none">
-      <h2>WORKS</h2>
-      <p class="small">※ 掲載できる範囲で施工写真を掲載しています。</p>
+      <h1>WORKS</h1>
+      <p class="page-lead">掲載できる範囲で、施工写真と対応内容の例をまとめています。</p>
 
-      <div class="gallery">
-        <img src="./assets/img/work-01.jpg" alt="施工事例1：アンテナ設置">
-        <img src="./assets/img/work-02.jpg" alt="施工事例2：方向調整">
-        <img src="./assets/img/work-03.jpg" alt="施工事例3：配線・機器点検">
-        <img src="./assets/img/work-04.jpg" alt="施工事例4：設置後の確認">
+      <div class="works-grid">
+        <article class="work-card">
+          <img src="./assets/img/work-01.jpg" alt="ベランダ側面に設置したデザインアンテナの施工事例" width="480" height="854" loading="lazy" decoding="async">
+          <div class="work-body">
+            <h3>デザインアンテナ設置</h3>
+            <p class="small">外観との調和に配慮しつつ、受信環境を確認して壁面側へ設置した例です。</p>
+            <ul class="list compact">
+              <li>主な内容：地デジアンテナの設置</li>
+              <li>想定相談例：新築・外観をすっきり見せたい</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <img src="./assets/img/work-02.jpg" alt="ベランダ付近に設置したBS/CSアンテナと地デジアンテナの施工事例" width="480" height="854" loading="lazy" decoding="async">
+          <div class="work-body">
+            <h3>BS/CS と地デジの併設</h3>
+            <p class="small">設置位置や方向を調整しながら、複数のアンテナ機器をまとめて施工した例です。</p>
+            <ul class="list compact">
+              <li>主な内容：BS/CS方向調整・地デジ設備設置</li>
+              <li>想定相談例：衛星放送を見たい、受信レベルを確認したい</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <img src="./assets/img/work-03.jpg" alt="地デジアンテナとBS/CSアンテナの配線をまとめた施工事例" width="480" height="854" loading="lazy" decoding="async">
+          <div class="work-body">
+            <h3>機器まわりの配線・調整</h3>
+            <p class="small">機器や配線の取り回しを確認しながら、安定受信を意識して施工した例です。</p>
+            <ul class="list compact">
+              <li>主な内容：機器接続、配線確認、方向調整</li>
+              <li>想定相談例：映りが悪い、点検してほしい</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <img src="./assets/img/work-04.jpg" alt="外壁面に取り付けたアンテナ設備の施工事例" width="480" height="854" loading="lazy" decoding="async">
+          <div class="work-body">
+            <h3>外壁面のアンテナ設備施工</h3>
+            <p class="small">壁面の条件に合わせてアンテナ機器を取り付け、受信確認まで行った例です。</p>
+            <ul class="list compact">
+              <li>主な内容：壁面設置、固定、受信確認</li>
+              <li>想定相談例：既設設備の見直し、取り替え相談</li>
+            </ul>
+          </div>
+        </article>
       </div>
 
       <div class="card" style="margin-top:14px">
-        <h3>施工内容の例</h3>
+        <h3>対応できる内容の例</h3>
         <ul class="list">
           <li>地デジアンテナ新設</li>
           <li>BS/CSアンテナの新設・方向調整</li>
-          <li>受信不良（映らない）の原因調査</li>
+          <li>受信不良（映らない・乱れる）の原因調査</li>
         </ul>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary" href="./contact.html">相談する</a>
       </div>
     </section>
 
     <footer class="footer">
-      <a href="./index.html">← ホームへ戻る</a>
+      <div class="footer-meta">
+        <div>アンテナデザイン合同会社</div>
+        <div>〒891-0111 鹿児島県鹿児島市小原町41-18</div>
+        <div>TEL：<a href="tel:0992968673">099-296-8673</a> ／ 対応エリア：鹿児島県内（薩摩半島）</div>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">ホームへ戻る</a>
+        <a href="./about.html">会社情報</a>
+        <a href="./contact.html">お問い合わせ</a>
+      </div>
     </footer>
   </main>
 </body>
 </html>
-
